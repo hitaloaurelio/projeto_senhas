@@ -10,8 +10,8 @@ chars = 'abcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*(-_=+)'
 
 CONFIG_STRING = """
 DEBUG=True
-SECRET_KEY=%s
-ALLOWED_HOSTS=127.0.0.1, .localhost
+SECRET_KEY= "django-insecure-(@6wgpd2n@@ltot25f=6y%@*xfi!wegjjmo+0u+$j1%ko)ou5n"
+ALLOWED_HOSTS=127.0.0.1, .localhost, https://vaquejada-teste.herokuapp.com
 """.strip() % get_random_string(50, chars)
 
 # Writing our configuration file to '.env'
